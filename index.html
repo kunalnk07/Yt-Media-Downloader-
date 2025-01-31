@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube By Editor Kunal </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Video Streaming Website</h1>
+    <input type="text" id="search-input" placeholder="Search for videos...">
+    <button id="search-button">Search</button>
+    <div id="categories">
+      <button class="category-button" data-category="music">Music</button>
+      <button class="category-button" data-category="gaming">Gaming</button>
+      <button class="category-button" data-category="movies">Movies</button>
+      <button class="category-button" data-category="sports">Sports</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="video-container"></div>
+    <div id="loading-spinner" class="hidden">Loading...</div>
+    <div id="player"></div>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>
